@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Onclick Function</title>
+</head>
+<body>
+    <button type="submit" onclick="login()">Sign in</button><br>
+
+    <label for="">Name</label>
+    <input type="text" id="name">
+    <button type="submit" onclick="nam()">Enter</button>
+    <div id="demo1"></div>
+
+    <label for="">Email</label>
+    <input type="text" id="email">
+    <button type="submit" onclick="mail()">Sign up</button>
+    <div id="demo2"></div>
+
+    <label for="">City</label>
+    <input type="text" id="city">
+    <button type="submit" onclick="city()">Enter</button>
+    <div id="demo3"></div>
+
+    <label for="">Percentage</label>
+    <input type="text" id="percentage">
+    <button type="submit" onclick="percentage()">Value</button>
+    <div id="demo4"></div>
+
+    <label for="">Phone</label>
+    <input type="text" id="phone">
+    <button type="submit" onclick="number()">Send code</button>
+    <div id="demo5"></div>
+
+    
+    
+    <button type="submit" onclick="logout()">Sign out</button>
+    <script>
+        function login(){document.write("Welcome")}
+        function logout(){document.write("Hope we made your day a little better")}
+
+        function
+        city(){
+            var n=document.getElementById("city").value;
+            document.getElementById("demo3").innerHTML=n;
+            document.getElementById("city").value="";
+        }
+        function
+        mail(){
+            var n=document.getElementById("email").value;
+            document.getElementById("demo2").innerHTML=n;
+            document.getElementById("email").value="";
+        }
+        function
+        nam(){
+            var n=document.getElementById("name").value;
+            document.getElementById("demo1").innerHTML=n;
+            document.getElementById("name").value="";
+        }
+        function
+        number(){
+            var n=document.getElementById("phone").value;
+            document.getElementById("demo5").innerHTML=n;
+            document.getElementById("phone").value="";
+        }
+        function
+        percentage(){
+            var a=document.getElementById("percentage").value;
+            b= (a/700)*100
+            var a=document.getElementById("percentage").value;
+            document.getElementById("demo4").innerHTML=b;
+            document.getElementById("percentage").value="";
+        }
+    </script>
+</body>
+</html>
